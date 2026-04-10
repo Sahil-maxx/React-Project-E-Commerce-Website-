@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzBuy | Product Review</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Product.css" />
+</head>
+
+<body>
+
+  <!-- Header (Same as Homepage) -->
+  <header>
+    <nav class="navbar flex container">
+      <a href="index.html" class="logo">Buzz<span>Buy.</span></a>
+      <ul class="navlist flex">
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="Shop.html" class="link link-active">Shop</a></li>
+        <li><a href="Blog.html" class="link">Blog</a></li>
+        <li><a href="Contact.html" class="link">Contact</a></li>
+        <li class="nav-icons flex">
+          <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+          <a href="#" class="icon icon-active"><i class="fa-solid fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+      <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+  </header>
+
+  <!-- Product Details Section -->
+  <main>
+    <section class="product-section container">
+      <div class="product-container flex wrap">
+
+        <!-- Left: Product Images -->
+        <div class="product-images">
+          <img src="images/card-image3.jpg" alt="Product Image" class="main-image" id="mainImage">
+          <div class="thumbnail-container flex">
+            <img src="images/card-image3.jpg" alt="Thumb 1" class="thumb active">
+            <img src="images/card-image4.jpg" alt="Thumb 2" class="thumb">
+            <img src="images/card-image2.jpg" alt="Thumb 3" class="thumb">
+            <img src="images/card-image1.jpg" alt="Thumb 4" class="thumb">
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="product-info">
+          <h2 class="product-title">Leather Black Handbag Out Edition</h2>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(120 Reviews)</span>
+          </div>
+          <p class="price"><span>$100.00</span></p>
+          <p class="product-description">
+            This premium leather handbag is crafted with care to give you elegance and style.
+            Spacious compartments, smooth finish, and durable handles make it a perfect fit for your everyday look.
+          </p>
+
+          <div class="size-filter">
+            <h4>Select Size:</h4>
+            <div class="sizes flex">
+              <button class="size-btn active">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+            </div>
+          </div>
+
+          <div class="color-filter">
+            <h4>Color:</h4>
+            <div class="colors flex">
+              <div class="color-circle black active"></div>
+              <div class="color-circle brown"></div>
+              <div class="color-circle beige"></div>
+            </div>
+          </div>
+
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="reviews-section container">
+      <h3>Customer Reviews</h3>
+      <div class="line"></div>
+
+      <div class="review">
+        <div class="review-header flex">
+          <h4>Priya Sharma</h4>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <p class="review-text">Loved the quality and finish of this handbag! Worth every penny. ✨</p>
+      </div>
+
+      <div class="review">
+        <div class="review-header flex">
+          <h4>Rohan Mehta</h4>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <p class="review-text">The bag is nice but delivery was delayed by two days.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer (Same as Homepage) -->
+  <footer class="section">
+    <div class="footer-container container flex wrap">
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">About Us</a></li>
+        <li><a href="#" class="footer-link">Online Store</a></li>
+        <li><a href="#" class="footer-link">Blog</a></li>
+        <li><a href="#" class="footer-link">Contact Us</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">Login / Register</a></li>
+        <li><a href="#" class="footer-link">Your Cart</a></li>
+        <li><a href="#" class="footer-link">Wishlist Items</a></li>
+        <li><a href="#" class="footer-link">Your Checkout</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">FAQs</a></li>
+        <li><a href="#" class="footer-link">Terms Of Services</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-link">Returns</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-logo"><a href="#" class="logo">Buzz<span>Buy.</span></a></li>
+        <li><p class="detail">Gwalior city, DD Nagar</p></li>
+        <li><p class="detail">+91 123-456-78</p></li>
+        <li><p class="detail">buzzbuy@gmail.com</p></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2025 <a href="#" class="footer-link">BuzzBuy.</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="Product.js"></script>
+</body>
+</html>

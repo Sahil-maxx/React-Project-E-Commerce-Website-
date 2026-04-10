@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzBuy | Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Shop.css" />
+</head>
+
+<body>
+
+  <!-- Header (Same as Homepage) -->
+  <header>
+    <nav class="navbar flex container">
+      <a href="index.html" class="logo">Buzz<span>Buy.</span></a>
+      <ul class="navlist flex">
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="Products.html" class="link link-active">Shop</a></li>
+        <li><a href="Blog.html" class="link">Blog</a></li>
+        <li><a href="Contact.html" class="link">Contact</a></li>
+        <li class="nav-icons flex">
+          <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+          <a href="#" class="icon"><i class="fa-solid fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+      <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+  </header>
+
+  <!-- Products Section -->
+  <main>
+    <section class="shop-section container">
+      <h2 class="section-title">Our Latest Products</h2>
+      <div class="line"></div>
+
+      <!-- Filters -->
+      <div class="filter-bar flex wrap">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search product..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="fashion">Fashion</option>
+          <option value="electronics">Electronics</option>
+          <option value="accessories">Accessories</option>
+          <option value="home">Home & Living</option>
+        </select>
+
+        <select id="priceFilter">
+          <option value="all">All Prices</option>
+          <option value="low">Under $50</option>
+          <option value="medium">$50 - $150</option>
+          <option value="high">Above $150</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+
+        <!-- Example Card -->
+        <div class="product-card" data-category="fashion" data-price="medium">
+          <img src="images/card-image1.jpg" alt="Handbag">
+          <h3>Leather Black Handbag</h3>
+          <p class="price">$100.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+
+        <div class="product-card" data-category="electronics" data-price="high">
+          <img src="images/card-image2.jpg" alt="Headphones">
+          <h3>Wireless Headphones</h3>
+          <p class="price">$199.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+
+        <div class="product-card" data-category="fashion" data-price="low">
+          <img src="images/card-image3.jpg" alt="T-Shirt">
+          <h3>Men's Cotton T-Shirt</h3>
+          <p class="price">$40.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+
+        <div class="product-card" data-category="accessories" data-price="medium">
+          <img src="images/card-image4.jpg" alt="Watch">
+          <h3>Classic Wrist Watch</h3>
+          <p class="price">$120.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+
+        <div class="product-card" data-category="home" data-price="low">
+          <img src="images/card-image5.jpg" alt="Lamp">
+          <h3>Wooden Table Lamp</h3>
+          <p class="price">$45.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+
+        <div class="product-card" data-category="electronics" data-price="high">
+          <img src="images/card-image6.jpg" alt="Smartwatch">
+          <h3>Smartwatch Pro</h3>
+          <p class="price">$180.00</p>
+          <button onclick="location.href='Product.html'">View Details</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Same as Homepage) -->
+  <footer class="section">
+    <div class="footer-container container flex wrap">
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">About Us</a></li>
+        <li><a href="#" class="footer-link">Online Store</a></li>
+        <li><a href="#" class="footer-link">Blog</a></li>
+        <li><a href="#" class="footer-link">Contact Us</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">Login / Register</a></li>
+        <li><a href="#" class="footer-link">Your Cart</a></li>
+        <li><a href="#" class="footer-link">Wishlist Items</a></li>
+        <li><a href="#" class="footer-link">Your Checkout</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">FAQs</a></li>
+        <li><a href="#" class="footer-link">Terms Of Services</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-link">Returns</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-logo"><a href="#" class="logo">Buzz<span>Buy.</span></a></li>
+        <li><p class="detail">Gwalior city, DD Nagar</p></li>
+        <li><p class="detail">+91 123-456-78</p></li>
+        <li><p class="detail">buzzbuy@gmail.com</p></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2025 <a href="#" class="footer-link">BuzzBuy.</a></p>
+    </div>
+  </footer>
+
+  <script src="Shop.js"></script>
+</body>
+</html>
